@@ -1,0 +1,164 @@
+@charset 'utf-8';
+/*
+Theme Name: AirSupply
+Theme URI: http://trex2.themerex.net/
+Description: AirSupply - Multipurpose and Multiskin Responsive Wordpress theme
+Author: airsupply
+Author URI: http://themerex.net/
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column,two-columns,three-columns,four-columns,left-sidebar,right-sidebar,flexible-header,buddypress,custom-background,custom-colors,custom-header,custom-menu,editor-style,featured-image-header,featured-images,front-page-post-form,full-width-template,microformats,post-formats,sticky-post,theme-options,threaded-comments,translation-ready,holiday
+Text Domain: airsupply
+*/
+
+
+/* TABLE OF CONTENTS:
+
+1. Reset tags
+2. Default tag's settings
+3. Form fields settings
+4. WP styles and Screen readers
+5. Theme grid
+6. Page layouts
+7. Section's decorations
+   7.1 Header
+   7.2 Main Slider
+   7.3 Page top: page title and breadcrumbs
+   7.4 Main content wrapper
+   7.5 Post Formats
+   7.6 Post Layouts
+   7.7 Paginations
+8. Single page parts
+   8.1 Attachment and Portfolio post navigation
+   8.2 Reviews block
+   8.3 Post author
+   8.4 Comments
+   8.5 Page 404
+   8.8 Team member
+9. Sidebars
+10. Footer areas
+11. Utils
+12. Registration and Login popups
+13. Third part plugins
+14. Predefined classes for users
+
+-------------------------------------------------------------- */
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+body{
+  margin:0;
+  padding:0;
+  display:flex;
+  height:100vh;
+  justify-content:start;
+  align-items:center;
+  overflow:hidden;
+  flex-direction:column;
+  background-image: linear-gradient(to right top, #0f1011, #031120, #00112e, #000e39, #120541);
+  font-family: 'Merriweather', serif;
+}
+
+.supper-man img{
+  width:150px;
+  transform:rotate(45deg);
+  position:absolute;
+  top:55%;
+  animation:animationSupperman 6s infinite linear;
+}
+.star{
+  position:absolute;
+  width:3px;
+  height:3px;
+  right:0;
+  animation: animationStar 2s infinite linear;
+  z-index:-1;
+}
+.title{
+  color:#Fff;
+  font-size:130px;
+  margin-top:40px;
+}
+p{
+  font-size:22px;
+  color:#fff;
+}
+button{
+  padding:10px 30px;
+  border:0px;
+  background:#880000;
+  color:#fff;
+  font-size:18px;
+  letter-spacing:2px;
+  outline:none;
+  cursor:pointer;
+  border-radius:10px;
+  transition:.3s all;
+  font-family: 'Merriweather', serif;
+}
+button:hover{
+  background:#660000;
+}
+button:active{
+  transform:translate(-5px,5px);
+}
+@keyframes animationSupperman{
+  0%{
+    left:-150px;
+    top:55%;
+  }
+  10%{
+    top:53%;
+  }
+  20%{
+    top:58%;
+  }
+  30%{
+    top:53%;
+  }
+  40%{
+    top:58%;
+  }
+  50%{
+    top:53%;
+  }
+  60%{
+    top:58%;
+  }
+  70%{
+    top:53%;
+  }
+  80%{
+    top:58%;
+  }
+  90%{
+    top:53%;
+  }
+  100%{
+    left:110%;
+    top:55%;
+  }
+}
+@keyframes animationStar{
+    0%{
+      box-shadow:0px 0px 5px #fff;
+    }
+    20%{
+   box-shadow:0px 0px 35px  #fff;
+    }
+    40%{
+   box-shadow:0px 0px 5px #fff;
+    }
+    60%{
+   box-shadow:0px 0px 35px  #fff;
+    }
+    80%{
+   box-shadow:0px 0px 5px #fff;
+    }
+    100%{
+   box-shadow:0px 0px 35px  #fff;
+    }
+}
